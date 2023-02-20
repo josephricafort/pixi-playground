@@ -1,13 +1,15 @@
 <script>
-    import { onMount } from "svelte"
     import TailwindCss from "./TailwindCss.svelte";
-    import PixiDeclarativeDemo from "./components/PixiDeclarativeDemo.svelte";
+    import PixiSvelteDemo from "./components/PixiSvelteDemo.svelte";
+    import { Ticker } from "svelte-pixi"
 </script>
 
 <TailwindCss />
 
 <main>
-    <PixiDeclarativeDemo />
+    <Ticker>
+        <PixiSvelteDemo />
+    </Ticker>
 </main>
 
 <style>
